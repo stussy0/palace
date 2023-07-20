@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/advice-evisu.css" />
+    <link
+      rel="icon"
+      href="./images/main/palace-logo-6CE0EF6DCA-seeklogo.com.png"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>advice-evisu</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- ####################### Header ####################### -->
+      <header></header>
+
+      <!-- ####################### Evisu ####################### -->
+      <div class="advice-evisu">
+        <div class="evisu-contents">
+          <div class="evisu-con-title">
+            <h3>PALACE EVISU</h3>
+            <p>LAUNCHING FRIDAY APRIL 14TH:</p>
+            <ul>
+              <li>UK IN-STORE & ONLINE 11:00AM BST</li>
+              <li>EU ONLINE 12:00PM CEST</li>
+              <li>US ONLINE 11:00AM EDT 8:00AM PDT</li>
+              <li>NY IN-STORE 11:00AM EDT</li>
+              <li>LA IN-STORE 11:00AM PDT</li>
+            </ul>
+            <p>LAUNCHING SATURDAY APRIL 15TH:</p>
+            <ul>
+              <li>JAPAN IN-STORE & ONLINE 11:00AM JST</li>
+              <li>WECHAT 11:00AM CST</li>
+            </ul>
+          </div>
+          <div class="evisu-con-img">
+            <div class="image-gallery">
+              <img
+                src="./images/advice/SS23-PALACE-LOOKBOOK-600x420.jpg"
+                alt=""
+              />
+              <img src="./images/advice/SS23-PALACE-LOOKBOOK2.jpg" alt="" />
+              <img src="./images/advice/SS23-PALACE-LOOKBOOK3.jpg" alt="" />
+              <img src="./images/advice/SS23-PALACE-LOOKBOOK4.jpg" alt="" />
+            </div>
+            <button class="prev-button">◀</button>
+            <button class="next-button">▶</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ####################### Footer ####################### -->
+      <footer></footer>
+    </div>
+  </body>
+  <script>
+    $(function () {
+      $("header").load("header.html");
+      $("footer").load("footer.html");
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const galleryImages = document.querySelectorAll(".image-gallery img");
+      const prevButton = document.querySelector(".prev-button");
+      const nextButton = document.querySelector(".next-button");
+      let currentIndex = 0;
+
+      function showImage(index) {
+        galleryImages.forEach((img, i) => {
+          if (i === index) {
+            img.classList.add("active");
+          } else {
+            img.classList.remove("active");
+          }
+        });
+      }
+
+      prevButton.addEventListener("click", function () {
+        currentIndex =
+          (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        showImage(currentIndex);
+      });
+
+      nextButton.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        showImage(currentIndex);
+      });
+
+      showImage(currentIndex);
+    });
+  </script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>header</title>
+  </head>
+  <body>
+    <div class="header-inner">
+      <div class="logo-icon nav-button" onclick="toggleMenu()">
+        <img
+          src="./images/main/palace-logo-6CE0EF6DCA-seeklogo.com.png"
+          alt=""
+        />
+      </div>
+      <div class="logo-font">
+        <a href="./index.html">
+          <img src="./images/main/logo-font.png" alt="" />
+        </a>
+      </div>
+      <div class="info">
+        <ul>
+          <li>CART</li>
+          <li>/</li>
+          <li>LOGIN</li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu-bar" id="menuBar">
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="./shop.html">SHOPS</a>
+          </li>
+          <li>
+            <a href="/webshop.html">WEB SHOP</a>
+            <ul class="submenu">
+              <li><a href="./webshop.html"> All</li></a>
+              <li><a href="./webshop.html">New</a></li>
+              <li><a href="./webshop.html">Outer</a></li>
+              <li><a href="./webshop.html">Top</a></li>
+              <li><a href="./webshop.html">Bottom</a></li>
+              <li><a href="./webshop.html">Accessories</a></li>
+              <li><a href="./webshop.html">Hats</a></li>
+              <li><a href="./webshop.html">Bag</a></li>
+            </ul>
+          </li>
+          <li><a href="./wwe.html">PALACE WWE</a></li>
+          <li><a href="/adivce.html">ADVICE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script>
+    function toggleMenu() {
+      var menuBar = document.getElementById("menuBar");
+      var logoIcon = document.querySelector(".logo-icon");
+
+      menuBar.classList.toggle("active");
+      logoIcon.classList.toggle("clicked");
+    }
+  </script>
+</html>

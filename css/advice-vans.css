@@ -1,0 +1,45 @@
+.advice-vans {
+  width: 100vw;
+}
+
+.vans-contents {
+  width: 93.75vw;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vans-con-title h3 {
+  margin: 70px 0 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.vans-con-title ul {
+  font-size: 1.4rem;
+}
+
+.vans-con-title p {
+  font-size: 1.4rem;
+  padding-bottom: 3px;
+}
+
+.vans-con-title ul {
+  margin-bottom: 10px;
+}
+
+.vans-con-title li {
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.vans-con-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vans-con-img img {
+  width: 23.95vw;
+}

@@ -1,0 +1,39 @@
+#wwe-title {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#wwe-title ul {
+  padding: 0 30px 50px;
+}
+
+#wwe-title li {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#wwe-title li:first-child {
+  list-style: none;
+  font-style: normal;
+}
+
+#wwe-con {
+  width: 100%;
+}
+
+.wwe-img {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#wwe-con img {
+  width: 26.5vw;
+  cursor: pointer;
+}
