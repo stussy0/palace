@@ -1,0 +1,45 @@
+.advice-oakley {
+  width: 100vw;
+}
+
+.oakley-contents {
+  width: 93.75vw;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.oakley-con-title h3 {
+  margin: 70px 0 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.oakley-con-title ul {
+  font-size: 1.4rem;
+}
+
+.oakley-con-title p {
+  font-size: 1.4rem;
+  padding-bottom: 3px;
+}
+
+.oakley-con-title ul {
+  margin-bottom: 10px;
+}
+
+.oakley-con-title li {
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.oakley-con-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.oakley-con-img img {
+  width: 23.95vw;
+}
