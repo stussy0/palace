@@ -43,3 +43,52 @@
 .oakley-con-img img {
   width: 23.95vw;
 }
+
+@media screen and (max-width: 1000px) {
+  .oakley-con-title h3 {
+    margin: 0px 0 20px;
+  }
+
+  .oakley-contents {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 100%;
+    height: 95.5vh;
+  }
+
+  .oakley-con-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .oakley-con-img img {
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oakley-video {
+    padding-top: 50px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 435px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  iframe {
+    width: 100%;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  iframe {
+    width: 100%;
+    height: 204px;
+  }
+}

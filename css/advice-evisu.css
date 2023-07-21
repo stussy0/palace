@@ -44,11 +44,11 @@
 
 .image-gallery img {
   display: block;
-  width: 50.84vw;
+  width: 976px;
   height: auto;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 129px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -58,10 +58,9 @@
   z-index: 1;
 }
 
-.prev-button,
-.next-button {
+.next-button,
+.prev-button {
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
@@ -73,11 +72,49 @@
 }
 
 .prev-button {
-  right: 38px;
+  right: -82px;
   top: 331px;
 }
 
 .next-button {
   top: 331px;
-  left: 1010px;
+  left: 1139px;
+}
+
+@media screen and (max-width: 1524px) {
+  .evisu-contents {
+    height: 790px;
+  }
+  .image-gallery img {
+    width: 760px;
+    left: 344px;
+  }
+
+  .prev-button {
+    top: 280px;
+    right: -287px;
+  }
+
+  .next-button {
+    top: 280px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .evisu-contents {
+    height: 790px;
+  }
+  .image-gallery img {
+    width: 760px;
+    left: 344px;
+  }
+
+  .prev-button {
+    top: 280px;
+    right: -287px;
+  }
+
+  .next-button {
+    top: 280px;
+  }
 }

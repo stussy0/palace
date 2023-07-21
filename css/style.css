@@ -592,7 +592,7 @@ footer {
     font-style: italic;
   }
 
-  footer {
+  .footer-inner {
     display: none;
   }
 
@@ -684,7 +684,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .mb-login {
     left: 30%;
   }

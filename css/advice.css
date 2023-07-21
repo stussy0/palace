@@ -10,12 +10,6 @@
   pointer-events: none;
 }
 
-.advice-video,
-.advice-img {
-  width: 100%;
-  height: 100%;
-}
-
 .advice-video:hover,
 .advice-img:hover {
   cursor: pointer;
@@ -26,4 +20,82 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1475px) {
+  .advice-video:nth-child(1) {
+    order: 2;
+  }
+
+  .advice-img img {
+    height: 51.5vh;
+  }
+
+  .advice-video {
+    position: relative;
+    height: 53vh;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .advice-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .advice-img img {
+    height: 42.5vh;
+  }
+
+  .advice-video {
+    position: relative;
+    height: 36vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advice-img img {
+    height: 33.5vh;
+  }
+
+  .advice-video {
+    position: relative;
+    height: 27vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advice-img img {
+    height: 23vh;
+  }
+
+  .advice-video {
+    position: relative;
+    height: 23vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .advice-container {
+    padding-top: 60px;
+  }
+  .advice-img img {
+    height: 18vh;
+  }
+
+  .advice-video {
+    position: relative;
+    height: 18vh;
+  }
 }

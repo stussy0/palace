@@ -43,3 +43,52 @@
 .vans-con-img img {
   width: 23.95vw;
 }
+
+@media screen and (max-width: 1000px) {
+  .vans-con-title h3 {
+    margin: 0px 0 20px;
+  }
+
+  .vans-contents {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 100%;
+    height: 95.5vh;
+  }
+
+  .vans-con-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vans-con-img img {
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .vans-video {
+    padding-top: 50px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 575px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  iframe {
+    width: 100%;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  iframe {
+    width: 100%;
+    height: 240px;
+  }
+}
