@@ -630,46 +630,46 @@ footer {
 
 @media screen and (max-width: 520px) {
   .mb-login {
-    bottom: 28%;
-    left: 36%;
-  }
-  .mb-title,
-  .mo-footer-t li,
-  .mo-footer-b li {
-    font-size: 1.2rem;
-  }
-
-  #main-video iframe {
-    width: 100%;
-    height: 27vh;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mb-login {
     bottom: 8%;
-  }
-
-  .logo-font img {
-    width: 31.6vw;
-  }
-
-  .logo-icon img {
-    width: 47.6px;
-  }
-  .mb-title,
-  .mo-footer-t li,
-  .mo-footer-b li {
-    font-size: 1.2rem;
+    left: 36%;
   }
 
   #main-img {
-    padding-top: 81px;
+    padding-top: 65px;
+  }
+
+  .logo-icon img {
+    width: 7vw;
+  }
+
+  .logo-font img {
+    width: 19vw;
+  }
+
+  .mb-title,
+  .mo-footer-t li,
+  .mo-footer-b li {
+    font-size: 1.2rem;
   }
 
   #main-video iframe {
     width: 100%;
-    height: 40.2vh;
+    height: 40.5vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #main-img {
+    padding-top: 54px;
+  }
+
+  #main-video iframe {
+    width: 100%;
+    height: 32vh;
+  }
+
+  .mb-login {
+    left: 32%;
   }
 }
 
@@ -691,16 +691,16 @@ footer {
   }
 
   .logo-font img {
-    width: 30.6vw;
+    width: 20.6vw;
   }
 
   .logo-icon img {
-    width: 30.6px;
+    width: 20.6px;
   }
 
   #main-video iframe {
     width: 100%;
-    height: 27.8vh;
+    height: 25.8vh;
   }
 
   .mb-title,
