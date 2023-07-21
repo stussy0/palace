@@ -511,7 +511,7 @@ footer {
   .mb-login {
     display: block;
     position: absolute;
-    bottom: 20%;
+    bottom: 0%;
     left: 41%;
   }
 
@@ -667,6 +667,10 @@ footer {
     height: 32vh;
   }
 
+  .menu {
+    top: 48%;
+  }
+
   .logo-font img {
     width: 104px;
   }
@@ -686,7 +690,7 @@ footer {
   }
 
   .menu {
-    top: 38%;
+    top: 48%;
   }
 
   .menu li {
@@ -694,7 +698,7 @@ footer {
   }
 
   .mb-login {
-    bottom: 25%;
+    bottom: 0%;
     left: 28%;
     font-size: 1rem;
   }
