@@ -511,7 +511,7 @@ footer {
   .mb-login {
     display: block;
     position: absolute;
-    bottom: 9%;
+    bottom: 20%;
     left: 41%;
   }
 
@@ -533,7 +533,7 @@ footer {
 
   .menu {
     text-align: center;
-    top: 48%;
+    top: 42%;
     left: 50%;
   }
 
@@ -629,21 +629,20 @@ footer {
 }
 
 @media screen and (max-width: 520px) {
-  .mb-login {
-    bottom: 8%;
-    left: 36%;
-  }
-
   #main-img {
     padding-top: 65px;
   }
 
-  .logo-icon img {
-    width: 7vw;
+  .logo-font img {
+    width: 130px;
   }
 
-  .logo-font img {
-    width: 19vw;
+  .logo-icon img {
+    width: 42px;
+  }
+
+  .mb-login {
+    left: 37%;
   }
 
   .mb-title,
@@ -660,12 +659,20 @@ footer {
 
 @media screen and (max-width: 400px) {
   #main-img {
-    padding-top: 54px;
+    padding-top: 60px;
   }
 
   #main-video iframe {
     width: 100%;
     height: 32vh;
+  }
+
+  .logo-font img {
+    width: 104px;
+  }
+
+  .logo-icon img {
+    width: 37px;
   }
 
   .mb-login {
@@ -678,24 +685,22 @@ footer {
     left: 30%;
   }
 
+  .menu {
+    top: 38%;
+  }
+
   .menu li {
     font-size: 1.4rem;
   }
 
-  .mb-login li {
+  .mb-login {
+    bottom: 25%;
+    left: 28%;
     font-size: 1rem;
   }
 
   #main-img {
-    padding-top: 50px;
-  }
-
-  .logo-font img {
-    width: 20.6vw;
-  }
-
-  .logo-icon img {
-    width: 20.6px;
+    padding-top: 60px;
   }
 
   #main-video iframe {
