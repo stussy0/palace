@@ -37,3 +37,25 @@
   width: 26.5vw;
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  #wwe-con img:nth-child(2),
+  #wwe-con img:nth-child(3) {
+    display: none;
+  }
+
+  #wwe-con img {
+    width: 80vw;
+  }
+
+  #wwe-title ul {
+    padding: 0 30px 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #wwe-title {
+    flex-direction: column;
+    padding-top: 80px;
+  }
+}

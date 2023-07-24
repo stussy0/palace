@@ -105,16 +105,54 @@
     height: 790px;
   }
   .image-gallery img {
-    width: 760px;
-    left: 344px;
+    width: 545px;
+    left: 583px;
   }
 
   .prev-button {
-    top: 280px;
-    right: -287px;
+    top: 186px;
+    right: -555px;
   }
 
   .next-button {
-    top: 280px;
+    top: 186px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .evisu-con-title h3 {
+    margin: 28px 0 20px;
+  }
+
+  .evisu-contents {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .evisu-con-img,
+  .image-gallery img {
+    position: inherit;
+  }
+
+  .next-button,
+  .prev-button {
+    display: none;
+  }
+
+  .image-gallery img {
+    width: 93vw;
+  }
+
+  .image-gallery img:nth-child(2),
+  .image-gallery img:nth-child(3),
+  .image-gallery img:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .evisu-con-title h3 {
+    margin: 0px 0 20px;
   }
 }
