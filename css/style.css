@@ -119,7 +119,7 @@ header {
 
 #main-video iframe {
   width: 100%;
-  height: 90vh;
+  height: 92vh;
 }
 
 /* ============= Section: shop,webshop =============== */
@@ -511,8 +511,9 @@ footer {
   .mb-login {
     display: block;
     position: absolute;
-    bottom: 0%;
-    left: 41%;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .mb-login li {
@@ -641,10 +642,6 @@ footer {
     width: 42px;
   }
 
-  .mb-login {
-    left: 37%;
-  }
-
   .mb-title,
   .mo-footer-t li,
   .mo-footer-b li {
@@ -678,29 +675,15 @@ footer {
   .logo-icon img {
     width: 37px;
   }
-
-  .mb-login {
-    left: 32%;
-  }
 }
 
 @media screen and (max-width: 360px) {
-  .mb-login {
-    left: 30%;
-  }
-
   .menu {
     top: 48%;
   }
 
   .menu li {
     font-size: 1.4rem;
-  }
-
-  .mb-login {
-    bottom: 0%;
-    left: 28%;
-    font-size: 1rem;
   }
 
   #main-img {
@@ -721,17 +704,4 @@ footer {
   .mb-title {
     text-align: center;
   }
-
-  /* .mb-con-all {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1%;
-    padding-bottom: 60px;
-  }
-
-  #mb-con img {
-    width: 100vw;
-    height: 180px;
-    filter: brightness(40%);
-  } */
 }
